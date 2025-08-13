@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Mohamed Muslemani</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom -->
+  <link href="CSS/main.css" rel="stylesheet">
+</head>
+<body>
+  <header class="shadow-sm py-2">
+    <nav class="container d-flex justify-content-between align-items-center navbar navbar-expand-lg">
+      <a class="navbar-brand fw-bold" href="index.html">Mohamed Muslemani</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="text-center mb-5">Projects</h1>
+
+    <section class="mb-4 project-card">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-globe2 project-icon"></i>
+        <div>
+          <h2 class="h4 mb-1">Missan Group Website</h2>
+          <p class="text-muted mb-2">Live Client Website – July 2024</p>
+          <ul class="mb-3">
+            <li>Developed in Angular using SCSS, TypeScript, HTML, and Bootstrap</li>
+            <li>Features responsive layout, routing, and smooth transition animations</li>
+            <li>Created collaboratively as a final project for a real-world client</li>
+          </ul>
+          <a href="https://missangroup.com" target="_blank" class="btn btn-cta rounded-pill me-2">Visit Site</a>
+          <a href="https://github.com/Mohamed-Muslemani/MissanGroupIncWebsite" target="_blank" class="btn btn-ghost rounded-pill">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4 project-card">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-newspaper project-icon"></i>
+        <div>
+          <h2 class="h4 mb-1">Enactus CMS (Laravel)</h2>
+          <p class="text-muted mb-2">Laravel • Blade • MySQL • Auth</p>
+          <ul class="mb-3">
+            <li>CRUD for news, projects, and categories with authentication/authorization</li>
+            <li>Image uploads with storage integration and admin dashboard controls</li>
+            <li>Reusable Blade layouts and components, clean routing and controllers</li>
+          </ul>
+          <div class="mb-2 d-flex flex-wrap gap-2">
+            <span class="tag">Laravel</span><span class="tag">Blade</span><span class="tag">MySQL</span><span class="tag">CRUD</span>
+          </div>
+          <p class="fst-italic mb-0">Private Repository (code available on request)</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="mb-4 project-card">
+    <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-journal-code project-icon"></i>
+        <div>
+        <h2 class="h4 mb-1">Laravel Articles & Categories</h2>
+        <p class="text-muted mb-2">Laravel • REST API • Eloquent • Validation</p>
+        <ul class="mb-3">
+            <li>Implemented <strong>Category</strong> and <strong>Article</strong> models with migrations, seeders, and one‑to‑many Eloquent relationships.</li>
+            <li>Built RESTful <strong>resource controllers</strong> and routes for full CRUD on articles and categories.</li>
+            <li>Used <strong>FormRequest</strong> validation and (optional) <strong>API Resources</strong> for clean JSON responses.</li>
+            <li>Verified endpoints end‑to‑end in <strong>Postman</strong> (create, list, show, update, delete; including relationship fields).</li>
+        </ul>
+
+        <div class="mb-3 d-flex flex-wrap gap-2">
+            <span class="tag">Laravel</span><span class="tag">Eloquent</span>
+            <span class="tag">REST API</span><span class="tag">Postman</span>
+        </div>
+
+        <p class="fst-italic mb-0">Postman collection & code available on request.</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="mb-4 project-card">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-phone project-icon"></i>
+        <div>
+          <h2 class="h4 mb-1">Android Expense Tracker</h2>
+          <p class="text-muted mb-2">Kotlin • Navigation Component • Room</p>
+          <ul class="mb-3">
+            <li>Add, edit, filter, and delete expenses with category and date range</li>
+            <li>Single-activity architecture with multiple fragments and Safe Args</li>
+            <li>Room database with DAO repository pattern and ViewModel</li>
+          </ul>
+          <div class="mb-2 d-flex flex-wrap gap-2">
+            <span class="tag">Kotlin</span><span class="tag">Room</span><span class="tag">MVVM</span><span class="tag">Android</span>
+          </div>
+          <p class="fst-italic mb-0">Demo APK available on request</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4 project-card">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-collection project-icon"></i>
+        <div>
+          <h2 class="h4 mb-1">Angular Champion Manager</h2>
+          <p class="text-muted mb-2">Angular • Routing • Reactive Forms • CRUD</p>
+          <ul class="mb-3">
+            <li>Showcases a list of League of Legends champions with full CRUD capabilities</li>
+            <li>Utilizes components, services, directives, pipes, routing, and lazy loading</li>
+            <li>Data is managed using reactive forms and mock API subscription</li>
+          </ul>
+          <a href="https://github.com/Mohamed-Muslemani/Mohamed_Muslemani_Learning_Angular/tree/Assignment9" target="_blank" class="btn btn-ghost rounded-pill">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4 project-card">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-bag-check project-icon"></i>
+        <div>
+          <h2 class="h4 mb-1">PHP Auction Project</h2>
+          <p class="text-muted mb-2">OOP PHP • Email Verification • PayPal Integration</p>
+          <ul class="mb-3">
+            <li>Users can register, verify via email, and bid or list auction items</li>
+            <li>Automatic email notifications for winners and auctioneers</li>
+            <li>PayPal integration with receipt generation on successful payment</li>
+          </ul>
+          <a href="https://mmuslemani.scweb.ca/auction/" target="_blank" class="btn btn-cta rounded-pill me-2">Visit Site</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4 project-card">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-database-gear project-icon"></i>
+        <div>
+          <h2 class="h4 mb-1">Event Management System</h2>
+          <p class="text-muted mb-2">Java • JavaFX • JDBC • GitHub</p>
+          <ul class="mb-0">
+            <li>Desktop application that records and manages event data across municipalities</li>
+            <li>Supports host assignment and location tracking for events</li>
+          </ul>
+          <p class="fst-italic mt-2 mb-0">Private Repository</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4 project-card">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-controller project-icon"></i>
+        <div>
+          <h2 class="h4 mb-1">QUADLINE</h2>
+          <p class="text-muted mb-2">Java • JavaFX</p>
+          <ul class="mb-3">
+            <li>Connect 4 clone with custom piece colors, animations, and sound effects</li>
+            <li>Save game state and user settings between sessions</li>
+          </ul>
+          <a href="https://github.com/Mohamed-Muslemani/QUADLINE" target="_blank" class="btn btn-ghost rounded-pill">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4 project-card">
+      <div class="d-flex align-items-start gap-3">
+        <i class="bi bi-window-sidebar project-icon"></i>
+        <div>
+          <h2 class="h4 mb-1">Portfolio Website v1</h2>
+          <p class="text-muted mb-2">HTML • CSS</p>
+          <ul class="mb-3">
+            <li>My first multi-page website from scratch using only HTML and CSS</li>
+            <li>Used media queries, custom fonts, and CSS animations for interactivity</li>
+          </ul>
+          <a href="https://mmuslemani.scweb.ca/WEB210/Final_Project_MohamedMuslemani_0865765/" target="_blank" class="btn btn-cta rounded-pill me-2">Visit Site</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center footer text-muted">
+    <small>&copy; 2024 Mohamed Muslemani. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

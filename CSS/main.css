@@ -1,0 +1,147 @@
+/* ===== Variables ===== */
+:root {
+  /* Light Theme */
+  --bg: #ffffff;
+  --text: #1a1a1a;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --surface: #f8fafc;
+  --surface-2: #f3f6fb;
+  --border: #e2e8f0;
+  --shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+  --muted: #667085;
+}
+
+/* ===== Base Styles ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Space Grotesk', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease;
+}
+
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+/* ===== Navigation ===== */
+.nav a.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: .25rem .5rem;
+  border-radius: 999px;
+}
+
+.nav a.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 12px; right: 12px; bottom: -6px;
+  height: 2px; background: transparent;
+  transition: background 0.25s ease;
+}
+.nav a.nav-link:hover::after { background: var(--primary); }
+.nav a.nav-link.active, .nav a.nav-link[aria-current="page"] {
+  background: rgba(37, 99, 235, 0.08);
+  color: var(--primary);
+}
+
+/* ===== Hero/Panel Utilities (used across pages) ===== */
+.panel {
+  background: radial-gradient(1200px 400px at 20% -10%, #e8f0ff 0%, rgba(232,240,255,0.3) 35%, transparent 70%),
+              linear-gradient(180deg, var(--surface), var(--bg));
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2rem;
+}
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border), transparent);
+  border: 0;
+}
+
+/* Profile image */
+.profile-pic { width: 220px; height: 220px; object-fit: cover; }
+.ringed {
+  box-shadow: 0 0 0 6px #fff, 0 0 0 10px rgba(37, 99, 235, 0.15);
+}
+
+/* Icons */
+.icon { width: 30px; height: 30px; transition: transform 0.3s ease; display: block; }
+.icon:hover { transform: scale(1.12); }
+.icon-link { display: inline-flex; align-items: center; justify-content: center; }
+
+/* Mini highlight cards (home) */
+.mini-card {
+  display: flex; align-items: center; gap: .75rem;
+  padding: .9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.mini-card i { font-size: 1.25rem; color: var(--primary); }
+
+/* ===== Buttons ===== */
+.btn-cta {
+  background: var(--text); color: #fff;
+  border: 1px solid var(--text);
+}
+.btn-cta:hover { background: #000; color: #fff; border-color: #000; }
+
+.btn-ghost {
+  background: transparent; color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover { border-color: var(--text); }
+
+/* ===== Projects ===== */
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.25rem 1.25rem 1rem;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+.project-icon {
+  font-size: 1.5rem; color: var(--primary);
+  flex: 0 0 auto; margin-top: 0.25rem;
+}
+.tag {
+  display: inline-block;
+  padding: .2rem .6rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: .8rem;
+  line-height: 1;
+  color: var(--muted);
+  background: #fff;
+}
+
+/* ===== Footer ===== */
+.footer {
+  padding: 2.25rem 0;
+  background: var(--surface-2);
+  border-top: 1px solid var(--border);
+  margin-top: 2rem;
+}
+
+/* ===== Forms (contact) ===== */
+form.panel .form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 .2rem rgba(37, 99, 235, 0.15);
+}
+
+/* === Media Queries === */
+@media (max-width: 992px) {
+  .profile-pic { width: 200px; height: 200px; }
+}
+@media (max-width: 768px) {
+  .profile-pic { width: 180px; height: 180px; }
+  .navbar-collapse { flex-basis: 100%; text-align: center; }
+  .nav { flex-direction: column; gap: .5rem; width: 100%; }
+  .nav a.nav-link { padding: .5rem .75rem; }
+}
