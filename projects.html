@@ -1,198 +1,760 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Mohamed Muslemani</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Mohamed Muslemani</title>
 
-  <!-- Bootstrap & Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Selected projects by Mohamed Muslemani — full-stack web apps with AI, live client websites, native iOS and Android apps, and more."
+    />
+    <meta name="author" content="Mohamed Muslemani" />
+    <meta name="theme-color" content="#0b1117" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mohamedmuslemani.ca/projects.html" />
 
-  <!-- Custom -->
-  <link href="CSS/main.css" rel="stylesheet">
-</head>
-<body>
-  <header class="shadow-sm py-2">
-    <nav class="container d-flex justify-content-between align-items-center navbar navbar-expand-lg">
-      <a class="navbar-brand fw-bold" href="index.html">Mohamed Muslemani</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects | Mohamed Muslemani" />
+    <meta
+      property="og:description"
+      content="Featured work across React, Angular, NestJS, Laravel, Swift, and Kotlin."
+    />
+    <meta
+      property="og:url"
+      content="https://mohamedmuslemani.ca/projects.html"
+    />
+    <meta property="og:image" content="imgs/MyPic.png" />
 
-  <main class="container py-5">
-    <h1 class="text-center mb-5">Projects</h1>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Projects | Mohamed Muslemani" />
+    <meta
+      name="twitter:description"
+      content="Featured work across web, mobile, and backend."
+    />
 
-    <section class="mb-4 project-card">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-globe2 project-icon"></i>
-        <div>
-          <h2 class="h4 mb-1">Missan Group Website</h2>
-          <p class="text-muted mb-2">Live Client Website – July 2024</p>
-          <ul class="mb-3">
-            <li>Developed in Angular using SCSS, TypeScript, HTML, and Bootstrap</li>
-            <li>Features responsive layout, routing, and smooth transition animations</li>
-            <li>Created collaboratively as a final project for a real-world client</li>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1117'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Manrope,Segoe UI,sans-serif' font-size='32' font-weight='800' fill='%2322d3ee'%3EM%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="CSS/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav
+        class="container navbar navbar-expand-lg"
+        aria-label="Primary navigation"
+      >
+        <a
+          class="navbar-brand"
+          href="index.html"
+          aria-label="Mohamed Muslemani — home"
+        >
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span class="brand-name">Mohamed Muslemani</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="projects.html"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-          <a href="https://missangroup.com" target="_blank" class="btn btn-cta rounded-pill me-2">Visit Site</a>
-          <a href="https://github.com/Mohamed-Muslemani/MissanGroupIncWebsite" target="_blank" class="btn btn-ghost rounded-pill">View Code</a>
         </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <section class="mb-4 project-card">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-newspaper project-icon"></i>
-        <div>
-          <h2 class="h4 mb-1">Enactus CMS (Laravel)</h2>
-          <p class="text-muted mb-2">Laravel • Blade • MySQL • Auth</p>
-          <ul class="mb-3">
-            <li>CRUD for news, projects, and categories with authentication/authorization</li>
-            <li>Image uploads with storage integration and admin dashboard controls</li>
-            <li>Reusable Blade layouts and components, clean routing and controllers</li>
-          </ul>
-          <div class="mb-2 d-flex flex-wrap gap-2">
-            <span class="tag">Laravel</span><span class="tag">Blade</span><span class="tag">MySQL</span><span class="tag">CRUD</span>
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow" data-reveal>Projects</p>
+          <h1 data-reveal>Selected work.</h1>
+          <p data-reveal>
+            Featured builds in detail below, plus an archive of additional
+            projects across web, mobile, and backend.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="featured-heading">
+        <div class="container">
+          <h2 id="featured-heading" class="visually-hidden">
+            Featured projects
+          </h2>
+
+          <!-- TIER 1: CondoManager -->
+          <article class="featured-hero-card" data-reveal>
+            <div class="featured-hero-content">
+              <p class="project-label">Featured project</p>
+              <h3>CondoManager</h3>
+              <p class="featured-hero-tagline">
+                A full-stack condo management platform with role-based admin and
+                owner access, integrated with vector-search document Q&amp;A
+                over uploaded building documentation.
+              </p>
+              <ul class="feature-list">
+                <li>
+                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                  Role-based admin and owner architecture covering units, dues,
+                  transactions, maintenance requests, and announcements.
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                  Vector-search document Q&amp;A built on pgvector. Returns
+                  cited answers from uploaded source PDFs.
+                </li>
+                <li>
+                  <i class="bi bi-check2-circle" aria-hidden="true"></i>
+                  Containerized with Docker and integrated with the OpenAI API
+                  for natural-language queries.
+                </li>
+              </ul>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Tailwind CSS</span>
+                <span>NestJS</span>
+                <span>Prisma</span>
+                <span>PostgreSQL</span>
+                <span>pgvector</span>
+                <span>Docker</span>
+                <span>OpenAI API</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary-custom project-gallery-trigger"
+                  data-gallery="condomanager"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectGalleryModal"
+                >
+                  <i class="bi bi-images" aria-hidden="true"></i>
+                  Screenshots
+                </button>
+                <a
+                  href="https://github.com/Mohamed-Muslemani/MADCoders_Condominium_Management_App_Capstone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary-custom"
+                >
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+
+            <div class="featured-hero-visual" aria-hidden="true">
+              <article class="hero-visual-mock hero-chat-mock">
+                <header class="chat-header">
+                  <span class="chat-label">
+                    <i class="bi bi-stars" aria-hidden="true"></i>
+                    Document Q&amp;A
+                  </span>
+                  <span class="chat-source">3 sources indexed</span>
+                </header>
+                <div class="chat-messages">
+                  <div class="chat-bubble chat-user">
+                    Do I need approval to modify my balcony?
+                  </div>
+                  <div class="chat-bubble chat-ai">
+                    <p>
+                      Yes. Structural or visual modifications to balconies
+                      require written board approval, with plans submitted 30
+                      days in advance for review.
+                    </p>
+                    <div class="chat-citations">
+                      <span class="chat-citation"
+                        >Section 5.4 &middot; Bylaws.pdf</span
+                      >
+                      <span class="chat-citation"
+                        >Section 2.1 &middot; Rules.pdf</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <footer class="chat-footer">
+                  <span class="chat-input-mock">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    Ask anything about your building&hellip;
+                  </span>
+                </footer>
+              </article>
+            </div>
+          </article>
+
+          <!-- TIER 2: Top 4 (Missan, LaLiga, Movie, Enactus) -->
+          <div class="featured-grid">
+            <article class="project-card" data-reveal>
+              <div class="card-topline">
+                <span class="project-type">Live client website</span>
+                <i class="bi bi-globe2" aria-hidden="true"></i>
+              </div>
+              <h3>Missan Group Website</h3>
+              <p>
+                Production Angular website for Missan Group Construction.
+                Responsive layouts, routing, and reusable components, deployed
+                and currently in production.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Angular</span>
+                <span>TypeScript</span>
+                <span>SCSS</span>
+                <span>Bootstrap</span>
+              </div>
+              <ul>
+                <li>
+                  Built and shipped to production for a real construction
+                  client.
+                </li>
+                <li>
+                  Responsive layouts with Angular routing and reusable
+                  components.
+                </li>
+              </ul>
+              <div class="project-actions">
+                <a
+                  href="https://missangroup.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary-custom"
+                >
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                  Visit Site
+                </a>
+                <button
+                  type="button"
+                  class="btn btn-secondary-custom project-gallery-trigger"
+                  data-gallery="missan"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectGalleryModal"
+                >
+                  <i class="bi bi-images" aria-hidden="true"></i>
+                  Screenshots
+                </button>
+                <a
+                  href="https://github.com/Mohamed-Muslemani/MissanGroupIncWebsite"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-ghost-custom"
+                >
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="card-topline">
+                <span class="project-type">Native iOS app</span>
+                <i class="bi bi-apple" aria-hidden="true"></i>
+              </div>
+              <h3>iOS La Liga Tracker</h3>
+              <p>
+                Native iOS app for browsing La Liga teams, standings, and live
+                match data. Built with SwiftUI and uses SwiftData to save
+                favorite players locally.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Swift</span>
+                <span>SwiftUI</span>
+                <span>SwiftData</span>
+                <span>iOS</span>
+                <span>REST API</span>
+              </div>
+              <ul>
+                <li>
+                  SwiftUI-based declarative interface across team, standings,
+                  and match views.
+                </li>
+                <li>
+                  SwiftData persistence for managing a saved list of favorite
+                  players.
+                </li>
+              </ul>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary-custom project-gallery-trigger"
+                  data-gallery="la-liga-tracker"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectGalleryModal"
+                >
+                  <i class="bi bi-images" aria-hidden="true"></i>
+                  Screenshots
+                </button>
+                <a
+                  href="https://github.com/Mohamed-Muslemani/LaLiga-Player-Tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary-custom"
+                >
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="card-topline">
+                <span class="project-type">Native Android app</span>
+                <i class="bi bi-android" aria-hidden="true"></i>
+              </div>
+              <h3>Android Movie App</h3>
+              <p>
+                Native Android app for browsing and tracking movies. Built with
+                Jetpack Compose and powered by the TMDB API for live catalog
+                data.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Kotlin</span>
+                <span>Android</span>
+                <span>Jetpack Compose</span>
+                <span>TMDB API</span>
+              </div>
+              <ul>
+                <li>
+                  Jetpack Compose UI for browsing the movie catalog and tracking
+                  watch history.
+                </li>
+                <li>Live movie data integrated through the TMDB REST API.</li>
+              </ul>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary-custom project-gallery-trigger"
+                  data-gallery="movie-app"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectGalleryModal"
+                >
+                  <i class="bi bi-images" aria-hidden="true"></i>
+                  Screenshots
+                </button>
+                <a
+                  href="https://github.com/Mohamed-Muslemani/MAD_511_Final_Project_Group_MAD_Coders"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary-custom"
+                >
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="project-card" data-reveal>
+              <div class="card-topline">
+                <span class="project-type">Laravel CMS</span>
+                <i class="bi bi-newspaper" aria-hidden="true"></i>
+              </div>
+              <h3>Enactus CMS</h3>
+              <p>
+                Laravel content management system for organizing public-facing
+                news, project updates, categories, and admin-managed content
+                with image uploads.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Laravel</span>
+                <span>Blade</span>
+                <span>MySQL</span>
+                <span>Auth</span>
+                <span>CRUD</span>
+              </div>
+              <ul>
+                <li>
+                  Authenticated admin workflows for news, projects, and
+                  categories.
+                </li>
+                <li>
+                  Image uploads and storage-backed content management with
+                  reusable Blade layouts.
+                </li>
+              </ul>
+              <div class="project-actions">
+                <button
+                  type="button"
+                  class="btn btn-primary-custom project-gallery-trigger"
+                  data-gallery="enactus-cms"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectGalleryModal"
+                >
+                  <i class="bi bi-images" aria-hidden="true"></i>
+                  Screenshots
+                </button>
+              </div>
+            </article>
           </div>
-          <p class="fst-italic mb-0">Private Repository (code available on request)</p>
+        </div>
+      </section>
+
+      <!-- ARCHIVE: rest of projects -->
+      <section class="section section-muted" aria-labelledby="archive-heading">
+        <div class="container">
+          <div class="archive-header" data-reveal>
+            <p class="eyebrow">Archive</p>
+            <h2 id="archive-heading">More projects</h2>
+            <p>
+              Additional work from coursework, personal builds, and earlier
+              learning projects.
+            </p>
+          </div>
+
+          <div class="archive-grid">
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-collection" aria-hidden="true"></i>
+                <span class="archive-card-type">Angular CRUD app</span>
+              </div>
+              <h3>Angular Champion Manager</h3>
+              <p>
+                Manages League of Legends champion data with reactive forms,
+                routing, and reusable services.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Angular</span>
+                <span>TypeScript</span>
+                <span>Reactive Forms</span>
+              </div>
+              <div class="archive-actions">
+                <button
+                  type="button"
+                  class="btn btn-ghost-custom project-gallery-trigger"
+                  data-gallery="angular-champion"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectGalleryModal"
+                >
+                  <i class="bi bi-images" aria-hidden="true"></i>
+                  Screenshots
+                </button>
+                <a
+                  href="https://github.com/Mohamed-Muslemani/Mohamed_Muslemani_Learning_Angular/tree/Assignment9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-ghost-custom"
+                >
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-journal-code" aria-hidden="true"></i>
+                <span class="archive-card-type">REST API</span>
+              </div>
+              <h3>Laravel Articles &amp; Categories</h3>
+              <p>
+                Laravel REST API with structured resources, validation, and
+                database relationships for article and category data.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Laravel</span>
+                <span>Eloquent</span>
+                <span>REST</span>
+              </div>
+            </article>
+
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-phone" aria-hidden="true"></i>
+                <span class="archive-card-type">Native Android app</span>
+              </div>
+              <h3>Android Expense Tracker</h3>
+              <p>
+                Mobile expense tracking with category-based filtering, Room
+                persistence, and MVVM architecture.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Kotlin</span>
+                <span>Room</span>
+                <span>MVVM</span>
+              </div>
+            </article>
+
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-bag-check" aria-hidden="true"></i>
+                <span class="archive-card-type">PHP web app</span>
+              </div>
+              <h3>PHP Auction Project</h3>
+              <p>
+                Auction platform with email verification, bidding, automated
+                notifications, and PayPal integration.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>PHP</span>
+                <span>OOP</span>
+                <span>SQL</span>
+                <span>PayPal</span>
+              </div>
+            </article>
+
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-database-gear" aria-hidden="true"></i>
+                <span class="archive-card-type">Java desktop app</span>
+              </div>
+              <h3>Event Management System</h3>
+              <p>
+                Java desktop application for organizing municipal event data
+                with host assignment and database-backed records.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Java</span>
+                <span>JavaFX</span>
+                <span>JDBC</span>
+                <span>SQL</span>
+              </div>
+              <div class="archive-actions">
+                <button
+                  type="button"
+                  class="btn btn-ghost-custom project-gallery-trigger"
+                  data-gallery="event-management"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectGalleryModal"
+                >
+                  <i class="bi bi-images" aria-hidden="true"></i>
+                  Screenshots
+                </button>
+
+                <a
+                  href="https://github.com/Mohamed-Muslemani/Local_Event_Tracking_System_Repo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-ghost-custom"
+                >
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-controller" aria-hidden="true"></i>
+                <span class="archive-card-type">JavaFX game</span>
+              </div>
+              <h3>QUADLINE</h3>
+              <p>
+                JavaFX Connect Four-style game with custom player settings,
+                animations, sound effects, and saved game state.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>Java</span>
+                <span>JavaFX</span>
+                <span>Game Logic</span>
+              </div>
+              <div class="archive-actions">
+                <button
+                  type="button"
+                  class="btn btn-ghost-custom project-gallery-trigger"
+                  data-gallery="quadline"
+                  data-bs-toggle="modal"
+                  data-bs-target="#projectGalleryModal"
+                >
+                  <i class="bi bi-images" aria-hidden="true"></i>
+                  Screenshots
+                </button>
+                <a
+                  href="https://github.com/Mohamed-Muslemani/QUADLINE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-ghost-custom"
+                >
+                  <i class="bi bi-github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-box-seam" aria-hidden="true"></i>
+                <span class="archive-card-type">C# desktop app</span>
+              </div>
+              <h3>Product Management System</h3>
+              <p>
+                C# WinForms desktop tool for managing products in a SQL database
+                with CRUD, search, and LINQ-based filtering.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>C#</span>
+                <span>WinForms</span>
+                <span>SQL</span>
+                <span>LINQ</span>
+              </div>
+            </article>
+
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-columns-gap" aria-hidden="true"></i>
+                <span class="archive-card-type">Hobby page</span>
+              </div>
+              <h3>Chess Hobby Page</h3>
+              <p>
+                Focused hobby page built for practicing semantic HTML, CSS
+                layout, and responsive styling.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Responsive</span>
+              </div>
+            </article>
+
+            <article class="archive-card" data-reveal>
+              <div class="archive-card-head">
+                <i class="bi bi-window-sidebar" aria-hidden="true"></i>
+                <span class="archive-card-type">Portfolio</span>
+              </div>
+              <h3>Portfolio Website v1</h3>
+              <p>
+                First multi-page portfolio built from scratch to practice page
+                structure, custom styling, and responsive behavior.
+              </p>
+              <div class="tag-row" aria-label="Tech stack">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Animations</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="modal fade gallery-modal"
+      id="projectGalleryModal"
+      tabindex="-1"
+      aria-labelledby="projectGalleryTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+      >
+        <div class="modal-content">
+          <div class="modal-header">
+            <div>
+              <p class="eyebrow mb-2">Project screenshots</p>
+              <h2 class="modal-title" id="projectGalleryTitle">
+                Project Gallery
+              </h2>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="gallery-stage">
+              <div class="gallery-image-wrap">
+                <img
+                  id="galleryMainImage"
+                  class="gallery-image"
+                  src=""
+                  alt=""
+                />
+              </div>
+              <button
+                type="button"
+                class="gallery-nav gallery-nav-prev"
+                id="galleryPrev"
+                aria-label="Previous screenshot"
+              >
+                <i class="bi bi-chevron-left" aria-hidden="true"></i>
+              </button>
+              <button
+                type="button"
+                class="gallery-nav gallery-nav-next"
+                id="galleryNext"
+                aria-label="Next screenshot"
+              >
+                <i class="bi bi-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="gallery-meta">
+              <p class="gallery-caption" id="galleryCaption">
+                Project screenshot preview.
+              </p>
+              <span class="gallery-count" id="galleryCount">1 / 1</span>
+            </div>
+
+            <div
+              class="gallery-thumbnails"
+              id="galleryThumbnails"
+              aria-label="Project screenshot thumbnails"
+            ></div>
+          </div>
         </div>
       </div>
-    </section>
-  
-    <section class="mb-4 project-card">
-    <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-journal-code project-icon"></i>
-        <div>
-        <h2 class="h4 mb-1">Laravel Articles & Categories</h2>
-        <p class="text-muted mb-2">Laravel • REST API • Eloquent • Validation</p>
-        <ul class="mb-3">
-            <li>Implemented <strong>Category</strong> and <strong>Article</strong> models with migrations, seeders, and one‑to‑many Eloquent relationships.</li>
-            <li>Built RESTful <strong>resource controllers</strong> and routes for full CRUD on articles and categories.</li>
-            <li>Used <strong>FormRequest</strong> validation and (optional) <strong>API Resources</strong> for clean JSON responses.</li>
-            <li>Verified endpoints end‑to‑end in <strong>Postman</strong> (create, list, show, update, delete; including relationship fields).</li>
-        </ul>
-
-        <div class="mb-3 d-flex flex-wrap gap-2">
-            <span class="tag">Laravel</span><span class="tag">Eloquent</span>
-            <span class="tag">REST API</span><span class="tag">Postman</span>
-        </div>
-
-        <p class="fst-italic mb-0">Postman collection & code available on request.</p>
-        </div>
     </div>
-    </section>
 
-    <section class="mb-4 project-card">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-phone project-icon"></i>
-        <div>
-          <h2 class="h4 mb-1">Android Expense Tracker</h2>
-          <p class="text-muted mb-2">Kotlin • Navigation Component • Room</p>
-          <ul class="mb-3">
-            <li>Add, edit, filter, and delete expenses with category and date range</li>
-            <li>Single-activity architecture with multiple fragments and Safe Args</li>
-            <li>Room database with DAO repository pattern and ViewModel</li>
-          </ul>
-          <div class="mb-2 d-flex flex-wrap gap-2">
-            <span class="tag">Kotlin</span><span class="tag">Room</span><span class="tag">MVVM</span><span class="tag">Android</span>
-          </div>
-          <p class="fst-italic mb-0">Demo APK available on request</p>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>&copy; 2026 Mohamed Muslemani. All rights reserved.</small>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="contact.html">Contact</a>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <section class="mb-4 project-card">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-collection project-icon"></i>
-        <div>
-          <h2 class="h4 mb-1">Angular Champion Manager</h2>
-          <p class="text-muted mb-2">Angular • Routing • Reactive Forms • CRUD</p>
-          <ul class="mb-3">
-            <li>Showcases a list of League of Legends champions with full CRUD capabilities</li>
-            <li>Utilizes components, services, directives, pipes, routing, and lazy loading</li>
-            <li>Data is managed using reactive forms and mock API subscription</li>
-          </ul>
-          <a href="https://github.com/Mohamed-Muslemani/Mohamed_Muslemani_Learning_Angular/tree/Assignment9" target="_blank" class="btn btn-ghost rounded-pill">View Code</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-4 project-card">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-bag-check project-icon"></i>
-        <div>
-          <h2 class="h4 mb-1">PHP Auction Project</h2>
-          <p class="text-muted mb-2">OOP PHP • Email Verification • PayPal Integration</p>
-          <ul class="mb-3">
-            <li>Users can register, verify via email, and bid or list auction items</li>
-            <li>Automatic email notifications for winners and auctioneers</li>
-            <li>PayPal integration with receipt generation on successful payment</li>
-          </ul>
-          <a href="https://mmuslemani.scweb.ca/auction/" target="_blank" class="btn btn-cta rounded-pill me-2">Visit Site</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-4 project-card">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-database-gear project-icon"></i>
-        <div>
-          <h2 class="h4 mb-1">Event Management System</h2>
-          <p class="text-muted mb-2">Java • JavaFX • JDBC • GitHub</p>
-          <ul class="mb-0">
-            <li>Desktop application that records and manages event data across municipalities</li>
-            <li>Supports host assignment and location tracking for events</li>
-          </ul>
-          <p class="fst-italic mt-2 mb-0">Private Repository</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-4 project-card">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-controller project-icon"></i>
-        <div>
-          <h2 class="h4 mb-1">QUADLINE</h2>
-          <p class="text-muted mb-2">Java • JavaFX</p>
-          <ul class="mb-3">
-            <li>Connect 4 clone with custom piece colors, animations, and sound effects</li>
-            <li>Save game state and user settings between sessions</li>
-          </ul>
-          <a href="https://github.com/Mohamed-Muslemani/QUADLINE" target="_blank" class="btn btn-ghost rounded-pill">View Code</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-4 project-card">
-      <div class="d-flex align-items-start gap-3">
-        <i class="bi bi-window-sidebar project-icon"></i>
-        <div>
-          <h2 class="h4 mb-1">Portfolio Website v1</h2>
-          <p class="text-muted mb-2">HTML • CSS</p>
-          <ul class="mb-3">
-            <li>My first multi-page website from scratch using only HTML and CSS</li>
-            <li>Used media queries, custom fonts, and CSS animations for interactivity</li>
-          </ul>
-          <a href="https://mmuslemani.scweb.ca/WEB210/Final_Project_MohamedMuslemani_0865765/" target="_blank" class="btn btn-cta rounded-pill me-2">Visit Site</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="text-center footer text-muted">
-    <small>&copy; 2024 Mohamed Muslemani. All rights reserved.</small>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="JS/gallery.js" defer></script>
+    <script src="JS/main.js" defer></script>
+  </body>
 </html>

@@ -1,120 +1,464 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohamed Muslemani | Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Muslemani | Full-Stack Developer</title>
 
-  <!-- Performance: Preload key images/icons -->
-  <link rel="preload" href="imgs/MyPic.png" as="image" imagesrcset="imgs/MyPic.png">
-  <link rel="preload" href="imgs/github.svg" as="image" type="image/svg+xml">
-  <link rel="preload" href="imgs/linkedin.svg" as="image" type="image/svg+xml">
-  <link rel="preload" href="imgs/file-earmark-person-fill.svg" as="image" type="image/svg+xml">
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Mohamed Muslemani is a full-stack developer in Windsor, ON building maintainable web apps with React, NestJS, Angular, Laravel, and PostgreSQL. Open to junior roles, internships, and freelance work."
+    />
+    <meta
+      name="keywords"
+      content="Mohamed Muslemani, full-stack developer, web developer, React, NestJS, Angular, Laravel, PostgreSQL, Windsor Ontario, junior developer, portfolio"
+    />
+    <meta name="author" content="Mohamed Muslemani" />
+    <meta name="theme-color" content="#0b1117" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://mohamedmuslemani.ca/" />
 
-  <!-- Bootstrap & Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Mohamed Muslemani | Full-Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Full-stack developer building practical web apps with React, NestJS, Laravel, and PostgreSQL. Open to junior roles, internships, and freelance."
+    />
+    <meta property="og:url" content="https://mohamedmuslemani.ca/" />
+    <meta property="og:image" content="imgs/MyPic.png" />
+    <meta property="og:locale" content="en_US" />
 
-  <!-- Custom -->
-  <link href="CSS/main.css" rel="stylesheet">
-</head>
-<body>
-  <header class="shadow-sm py-2">
-    <nav class="container d-flex justify-content-between align-items-center navbar navbar-expand-lg">
-      <a class="navbar-brand fw-bold" href="index.html">Mohamed Muslemani</a>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Mohamed Muslemani | Full-Stack Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Full-stack developer building practical web apps with React, NestJS, Laravel, and PostgreSQL."
+    />
+    <meta name="twitter:image" content="imgs/MyPic.png" />
 
-      <!-- Hamburger Menu Button for mobile -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Favicon (inline SVG monogram) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1117'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Manrope,Segoe UI,sans-serif' font-size='32' font-weight='800' fill='%2322d3ee'%3EM%3C/text%3E%3C/svg%3E"
+    />
 
-      <!-- Nav Items -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- HERO with subtle gradient panel + divider -->
-  <main class="container py-5">
-    <section class="hero panel shadow-sm">
-      <div class="row align-items-center">
-        <div class="col-md-5 text-center mb-4">
-          <img src="imgs/MyPic.png" alt="Mohamed Muslemani" class="img-fluid rounded-circle profile-pic ringed">
+    <link rel="preload" href="imgs/MyPic.webp" as="image" type="image/webp" />
+    <link
+      rel="preload"
+      href="imgs/github.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="imgs/linkedin.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+    <link
+      rel="preload"
+      href="imgs/file-earmark-person-fill.svg"
+      as="image"
+      type="image/svg+xml"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="CSS/main.css" rel="stylesheet" />
+
+    <!-- Structured data: Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mohamed Muslemani",
+        "jobTitle": "Full-Stack Developer",
+        "url": "https://mohamedmuslemani.ca/",
+        "image": "imgs/MyPic.png",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Windsor",
+          "addressRegion": "ON",
+          "addressCountry": "CA"
+        },
+        "sameAs": [
+          "https://github.com/Mohamed-Muslemani",
+          "https://www.linkedin.com/in/mohamed-muslemani-800733221/"
+        ],
+        "knowsAbout": [
+          "React",
+          "NestJS",
+          "Angular",
+          "Laravel",
+          "TypeScript",
+          "PostgreSQL",
+          "Full-Stack Development"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav
+        class="container navbar navbar-expand-lg"
+        aria-label="Primary navigation"
+      >
+        <a
+          class="navbar-brand"
+          href="index.html"
+          aria-label="Mohamed Muslemani — home"
+        >
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span class="brand-name">Mohamed Muslemani</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-7">
-          <h1 class="display-5 mb-3">Software Developer</h1>
-          <p class="lead mb-3">
-            I'm Mohamed Muslemani, a passionate software developer currently completing my Computer Programming diploma at St. Clair College. I enjoy solving problems, building apps, and working in collaborative environments. From tutoring students to building live client websites, I’m always looking for ways to grow and create an impact.
-          </p>
-          <div class="d-flex gap-3 mt-3 align-items-center flex-wrap">
-            <a href="https://github.com/Mohamed-Muslemani" target="_blank" data-bs-toggle="tooltip" title="GitHub" class="icon-link">
-              <img src="imgs/github.svg" alt="GitHub" class="icon">
-            </a>
-            <a href="https://www.linkedin.com/in/mohamed-muslemani-800733221/" target="_blank" data-bs-toggle="tooltip" title="LinkedIn" class="icon-link">
-              <img src="imgs/linkedin.svg" alt="LinkedIn" class="icon">
-            </a>
-            <a href="https://stclairconnect-my.sharepoint.com/:b:/g/personal/w0865765_myscc_ca/EXxceuaGOZlJt5z1fXmjKwEBKZ2H0bqcW0vOns-ghVlCUQ?e=M7xY2V" target="_blank" data-bs-toggle="tooltip" title="Resume" class="icon-link">
-              <img src="imgs/file-earmark-person-fill.svg" alt="Resume" class="icon">
-            </a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center g-5 hero-grid">
+            <div class="col-lg-7">
+              <p class="eyebrow" data-reveal>
+                <span class="status-dot" aria-hidden="true"></span>
+                Available for work &middot; Windsor, ON &middot; Open to relocation or remote
+              </p>
+              <h1 data-reveal>
+                Full-stack developer building modern web and mobile applications.
+              </h1>
+              <p class="hero-copy" data-reveal>
+                I'm Mohamed Muslemani, completing a 3-year Advanced Diploma in Mobile Applications Development at St. Clair College (graduating May 2026), with a B.E. in Electrical Engineering and prior experience in software testing. Recent work spans a full-stack condo management platform with AI document Q&amp;A, a live website for a construction client, and native iOS and Android applications. Open to full-stack, web, mobile, and freelance opportunities.
+              </p>
+
+              <div class="hero-actions" data-reveal>
+                <a href="projects.html" class="btn btn-primary-custom">
+                  View Projects
+                  <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </a>
+                <a href="contact.html" class="btn btn-secondary-custom"
+                  >Get in Touch</a
+                >
+                <a
+                  href="Mohamed_Muslemani_Resume.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-link-custom"
+                >
+                  <i class="bi bi-file-earmark-person" aria-hidden="true"></i>
+                  Resume
+                </a>
+              </div>
+
+              <div
+                class="quick-stats"
+                aria-label="Portfolio highlights"
+                data-reveal
+              >
+                <div>
+                  <strong>Stack</strong>
+                  <span>React &middot; NestJS &middot; Swift &middot; Kotlin</span>
+                </div>
+                <div>
+                  <strong>Project range</strong>
+                  <span>Web &middot; iOS &middot; Android &middot; Full-stack</span>
+                </div>
+                <div>
+                  <strong>Background</strong>
+                  <span>Engineering &rarr; QA &rarr; Coding</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-5">
+              <div class="profile-card" data-reveal>
+                <picture>
+                  <source srcset="imgs/MyPic.webp" type="image/webp" />
+                  <img
+                    src="imgs/MyPic.png"
+                    alt="Portrait of Mohamed Muslemani"
+                    class="profile-pic"
+                    width="720"
+                    height="600"
+                    fetchpriority="high"
+                  />
+                </picture>
+                <div class="profile-card-body">
+                  <div class="social-row">
+                    <a
+                      href="https://github.com/Mohamed-Muslemani"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="GitHub profile (opens in new tab)"
+                    >
+                      <img
+                        src="imgs/github.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/mohamed-muslemani-800733221/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn profile (opens in new tab)"
+                    >
+                      <img
+                        src="imgs/linkedin.svg"
+                        alt=""
+                        width="20"
+                        height="20"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </a>
+                    <a href="contact.html" aria-label="Contact Mohamed">
+                      <i class="bi bi-envelope" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section featured-section" aria-labelledby="featured-heading">
+        <div class="container">
+          <div class="featured-header" data-reveal>
+            <p class="eyebrow">Featured project</p>
+            <h2 id="featured-heading">CondoManager</h2>
+            <p class="featured-tagline">
+              A full-stack condo management platform with vector-search document Q&amp;A that cites the source PDF.
+            </p>
           </div>
 
-          <div class="mt-4 d-flex gap-2 flex-wrap">
-            <a href="projects.html" class="btn btn-cta rounded-pill px-4 py-2">View Projects</a>
-            <a href="contact.html" class="btn btn-ghost rounded-pill px-4 py-2">Contact Me</a>
+          <div class="bento-grid" data-reveal>
+            <article class="bento-card bento-chat" aria-label="Document Q&amp;A demo">
+              <header class="chat-header">
+                <span class="chat-label">
+                  <i class="bi bi-stars" aria-hidden="true"></i>
+                  Document Q&amp;A
+                </span>
+                <span class="chat-source">Source: Bylaws.pdf, Declarations.pdf</span>
+              </header>
+              <div class="chat-messages">
+                <div class="chat-bubble chat-user">
+                  Can I have a dog over 25&nbsp;lbs in my unit?
+                </div>
+                <div class="chat-bubble chat-ai">
+                  <p>
+                    Yes, with prior written approval from the condo board. Pets exceeding 25&nbsp;lbs require additional registration with management.
+                  </p>
+                  <span class="chat-citation">Section 4.3 &middot; Bylaws.pdf</span>
+                </div>
+                <div class="chat-bubble chat-user">
+                  What about short-term rentals?
+                </div>
+                <div class="chat-bubble chat-ai">
+                  <p>
+                    Short-term rentals under 30 days are prohibited. Long-term leases require board notification within 14 days.
+                  </p>
+                  <span class="chat-citation">Section 7.1 &middot; Declarations.pdf</span>
+                </div>
+              </div>
+              <footer class="chat-footer">
+                <span class="chat-input-mock">
+                  <i class="bi bi-search" aria-hidden="true"></i>
+                  Ask anything about your building&hellip;
+                </span>
+              </footer>
+            </article>
+
+            <article class="bento-card bento-stack-card">
+              <p class="bento-label">Stack</p>
+              <div class="stack-row"><strong>Frontend</strong><span>React &middot; TypeScript &middot; Tailwind</span></div>
+              <div class="stack-row"><strong>Backend</strong><span>NestJS &middot; Prisma</span></div>
+              <div class="stack-row"><strong>Data</strong><span>PostgreSQL + pgvector</span></div>
+              <div class="stack-row"><strong>Infra &amp; AI</strong><span>Docker &middot; OpenAI API</span></div>
+            </article>
+
+            <article class="bento-card bento-roles">
+              <p class="bento-label">Two roles, one platform</p>
+              <div class="role-pill role-pill-admin">
+                <strong><i class="bi bi-shield-lock" aria-hidden="true"></i> Admin</strong>
+                <span>Units, dues, transactions, requests, announcements</span>
+              </div>
+              <div class="role-pill role-pill-owner">
+                <strong><i class="bi bi-person" aria-hidden="true"></i> Owner</strong>
+                <span>Read updates, submit maintenance requests, browse documents</span>
+              </div>
+            </article>
+
+            <article class="bento-card bento-cta">
+              <p class="bento-label">Want to dig deeper?</p>
+              <p class="bento-cta-copy">Architecture, screenshots, and the full tech breakdown live on the project page.</p>
+              <a href="projects.html" class="btn btn-primary-custom">
+                View Project Details
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <div class="section-divider my-5" aria-hidden="true"></div>
+      <section class="section section-muted" aria-labelledby="stack-heading">
+        <div class="container">
+          <div class="section-heading" data-reveal>
+            <p class="eyebrow">Stack</p>
+            <h2 id="stack-heading">Technologies</h2>
+            <p>
+              A summary of the tools and frameworks applied across academic projects, client work, and personal builds.
+            </p>
+          </div>
 
-    <section class="row g-3">
-      <div class="col-md-4">
-        <div class="mini-card">
-          <i class="bi bi-globe2"></i>
-          <div>
-            <h6 class="mb-1">Client Work</h6>
-            <p class="mb-0 text-muted small">Missan Group website (live)</p>
+          <div class="stack-grid">
+            <div class="stack-group" data-reveal>
+              <h3><i class="bi bi-window" aria-hidden="true"></i> Frontend</h3>
+              <div class="tag-row">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>TypeScript</span><span>React</span><span>Angular</span
+                ><span>Bootstrap</span><span>Tailwind</span>
+              </div>
+            </div>
+            <div class="stack-group" data-reveal>
+              <h3>
+                <i class="bi bi-hdd-network" aria-hidden="true"></i> Backend
+              </h3>
+              <div class="tag-row">
+                <span>Node.js</span><span>NestJS</span><span>PHP</span
+                ><span>Laravel</span><span>C#</span><span>.NET</span>
+              </div>
+            </div>
+            <div class="stack-group" data-reveal>
+              <h3>
+                <i class="bi bi-database" aria-hidden="true"></i> Database &amp;
+                Tools
+              </h3>
+              <div class="tag-row">
+                <span>PostgreSQL</span><span>SQL</span><span>Prisma</span
+                ><span>Docker</span><span>Git</span><span>GitHub</span>
+              </div>
+            </div>
+            <div class="stack-group" data-reveal>
+              <h3>
+                <i class="bi bi-phone" aria-hidden="true"></i> Mobile &amp;
+                Other
+              </h3>
+              <div class="tag-row">
+                <span>Android</span><span>iOS</span><span>Java</span
+                ><span>Kotlin</span><span>Python</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="mini-card">
-          <i class="bi bi-code-slash"></i>
-          <div>
-            <h6 class="mb-1">Full‑Stack</h6>
-            <p class="mb-0 text-muted small">Angular • PHP • Laravel • Java</p>
+      </section>
+
+      <section class="section cta-section" aria-labelledby="cta-heading">
+        <div class="container">
+          <div class="cta-card" data-reveal>
+            <div>
+              <p class="eyebrow">Contact</p>
+              <h2 id="cta-heading">Open to opportunities</h2>
+              <p>
+                Currently seeking junior developer roles and internships, with availability for freelance collaborations on projects of interest. The contact form or email is the most direct way to reach me.
+              </p>
+            </div>
+            <div class="cta-actions">
+              <a href="contact.html" class="btn btn-primary-custom">
+                Send a Message
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
+              </a>
+              <a href="projects.html" class="btn btn-secondary-custom"
+                >View Projects</a
+              >
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="mini-card">
-          <i class="bi bi-people"></i>
-          <div>
-            <h6 class="mb-1">Mentorship</h6>
-            <p class="mb-0 text-muted small">Peer tutor for programming</p>
-          </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <small>&copy; 2026 Mohamed Muslemani. All rights reserved.</small>
+        <div class="footer-links">
+          <a
+            href="https://github.com/Mohamed-Muslemani"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/mohamed-muslemani-800733221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a href="contact.html">Contact</a>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="text-center footer text-muted">
-    <small>&copy; 2024 Mohamed Muslemani. All rights reserved.</small>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Initialize tooltips -->
-  <script>
-    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    const tooltipList = tooltipTriggerList.map(el => new bootstrap.Tooltip(el));
-  </script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="JS/main.js" defer></script>
+  </body>
 </html>
