@@ -1695,6 +1695,19 @@ ul {
   background: rgba(3, 17, 20, 0.6);
 }
 
+/* ===== Tooltips ===== */
+.tooltip {
+  --bs-tooltip-bg: var(--surface-muted);
+  --bs-tooltip-color: var(--text);
+  --bs-tooltip-opacity: 1;
+  --bs-tooltip-font-size: 0.8rem;
+  font-family: inherit;
+}
+
+.tooltip-inner {
+  border: 1px solid var(--border-strong);
+}
+
 /* ===== About ===== */
 .about-summary,
 .content-card,

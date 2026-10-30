@@ -1,4 +1,4 @@
-// Shared site scripts: scroll reveal, project filtering, header shadow on scroll, current year.
+// Shared site scripts: scroll reveal, project filtering, header shadow on scroll, tooltips, current year.
 (() => {
   "use strict";
 
@@ -72,6 +72,18 @@
           filterEmpty.toggleAttribute("hidden", visibleCount > 0);
         }
       });
+    });
+  }
+
+  /* ---------- Hover tooltips (mouse and trackpad only) ---------- */
+  const tooltipTargets = document.querySelectorAll("[data-bs-title]");
+
+  if (tooltipTargets.length && typeof bootstrap !== "undefined" && window.matchMedia("(hover: hover)").matches) {
+    tooltipTargets.forEach((el) => {
+      // The gallery modal returns focus to its button on close, so focus can't trigger those tooltips.
+      const trigger = el.matches("[data-bs-toggle='modal']") ? "hover" : "hover focus";
+      const tooltip = new bootstrap.Tooltip(el, { trigger });
+      el.addEventListener("click", () => tooltip.hide());
     });
   }
 
