@@ -1555,6 +1555,11 @@ ul {
 }
 
 /* ===== Gallery Modal ===== */
+/* Keeps the modal hidden if the Bootstrap CDN stylesheet fails to load. */
+.gallery-modal:not(.show) {
+  display: none;
+}
+
 .gallery-modal .modal-content {
   color: var(--text);
   background:
